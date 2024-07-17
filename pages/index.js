@@ -26,7 +26,7 @@ export default function Home() {
         }
     }, [searchValue])
 
-    async function dataFetch() {
+    function dataFetch() {
         axios("https://fakestoreapi.com/products")
             .then(response => {
                 if (response.status === 200)
