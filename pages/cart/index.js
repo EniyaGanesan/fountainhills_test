@@ -22,6 +22,10 @@ const Cart = () => {
                                                                       alt={row.title} width={150} height={100}/>
                         </div>
                         <div className={"flex justify-center"}>{row.title}</div>
+                        <div className={"flex justify-center"}>
+                            <div>Price :{row.price}</div>
+                            {/*<div>Left :{row.rating?.count}</div>*/}
+                        </div>
                     </div>)
                 })}
             </div>
