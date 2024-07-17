@@ -22,11 +22,6 @@ const Cart = () => {
                                                                       alt={row.title} width={150} height={100}/>
                         </div>
                         <div className={"flex justify-center"}>{row.title}</div>
-                        <div className={"addToCart flex justify-center text-white "}>
-                            <button className={"addToCart flex justify-center bg-[#7ba07b] text-white rounded-lg p-2"}
-                                    onClick={() => addProduct(row.id)}> Add to Cart
-                            </button>
-                        </div>
                     </div>)
                 })}
             </div>
