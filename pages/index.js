@@ -57,13 +57,13 @@ export default function Home() {
             if (!exists) {
                 return [...prevItems, currentData[0]];
             }
-            return prevItems; // Return the existing array if the item is a duplicate
+            return prevItems; // Return the array without duplicate
         });
     }
 
     return (
         <main
-            className={`bg-white flex min-h-screen flex-col items-center justify-between  ${inter.className}`}
+            className={`bg-white flex flex-col items-center justify-between  ${inter.className}`}
         >
             <h1 className={"text-xl text-center text-green-800 font-bold my-8"}>FountainHills Test Next App</h1>
             <div className="z-10 w-full items-center font-mono text-sm max-w-7xl m-4">
