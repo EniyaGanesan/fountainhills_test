@@ -14,7 +14,7 @@ const Cart = () => {
             {data && data.length === 0 && (
                 <h1 className={"text-xl text-center text-green-800 font-bold"}>{"No Items in the Cart , kindly add items and fill the details"}</h1>
             )}
-            <div className={"grid grid-cols-2 gap-8 "}>
+            <div className={"mt-10 grid grid-cols-2 gap-8 "}>
                 {data && data.map((row, index) => {
                     return (<div key={index} className={"border-2 border-[#b8e0b5] rounded-2xl p-2"}>
                         <div className={"flex justify-center"}><Image className={"w-auto h-[150px]"}
